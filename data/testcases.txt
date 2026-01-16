@@ -1,0 +1,35 @@
+Test Case 1: Add New Book
+Input:
+addBook(101, "Clean Code", "Robert C. Martin", 3)
+Expected Output:
+Book added successfully.
+
+Test Case 2: Add Duplicate Book
+Input:
+addBook(101, "Clean Code", "Robert C. Martin", 3)
+Expected Output:
+Book with this ID already exists.
+
+Test Case 3: Issue Book Successfully
+Input:
+issueBook(101)
+Expected Output:
+Book issued successfully.
+
+Test Case 4: Issue Book When No Copies Available
+Input:
+issueBook(999)
+Expected Output:
+Book not found.
+
+Test Case 5: Return Book
+Input:
+returnBook(101)
+Expected Output:
+Book returned successfully.
+
+Test Case 6: List All Books
+Input:
+listBooks()
+Expected Output:
+101 | Clean Code | Robert C. Martin | Copies: 3

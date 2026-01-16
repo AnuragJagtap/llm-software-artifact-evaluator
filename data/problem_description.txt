@@ -1,0 +1,23 @@
+Problem Title: Library Book Management System
+
+Problem Description:
+Design and implement a basic Library Book Management System that allows users
+to manage books in a library. The system should support adding new books,
+issuing books to users, returning books, and viewing available books.
+
+Functional Requirements:
+1. Add a new book with attributes: Book ID, Title, Author, and Number of Copies.
+2. Issue a book to a user if at least one copy is available.
+3. Return a previously issued book.
+4. Display a list of all available books with their details.
+
+Constraints:
+- Book ID must be unique.
+- The number of copies cannot be negative.
+- A book cannot be issued if no copies are available.
+
+Input:
+Commands to add, issue, return, and list books.
+
+Output:
+Appropriate success or error messages for each operation.
