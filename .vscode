@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Frontend (Next.js)",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend"
+      },
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Run Backend (FastAPI)",
+      "type": "shell",
+      "command": "uvicorn main:app --reload",
+      "options": {
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Run Full Stack",
+      "dependsOn": [
+        "Run Backend (FastAPI)",
+        "Run Frontend (Next.js)"
+      ],
+      "dependsOrder": "parallel"
+    }
+  ]
+}
